@@ -17,7 +17,7 @@ import (
 const aliasLength = 6
 
 type Request struct {
-	URL   string `json:"url" validate:"requierd,url"`
+	URL   string `json:"url" validate:"required,url"`
 	Alias string `json:"alias,omitempty"`
 }
 
