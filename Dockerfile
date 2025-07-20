@@ -1,6 +1,8 @@
 # Используем официальный образ Go для сборки
 FROM golang:alpine AS builder
 
+LABEL image_author="Michael Prunchak"
+
 # Устанавливаем необходимые пакеты для сборки с CGO и SQLite
 RUN apk add --no-cache gcc musl-dev sqlite-dev
 
